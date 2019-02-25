@@ -1,32 +1,191 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#html-2d-place {
+  width: 300px;
+  height: -webkit-fill-available;
+  position: relative;
+  padding: 5px;
+  z-index: 10;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  overflow-y: auto;
+}
+.textCaption{
+  color: #ffffff;
+  display: block;
+  text-shadow: 1px 1px 6px #000000;
+}
+
+#html-2d-place h1{
+  align-self: center;
+}
+*{
+  /*border: solid 1px red;*/
+  box-sizing: border-box;
+}
+body.a-body{
+  margin: -12px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+#burgerChkbx{
+  padding: 0;
+  margin: 20px 0px 0px 20px;
+  position: relative;
+  visibility: hidden;
+}
+#like_button_container{
+  margin: 15px;
+}
+#menu {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff33;
+  top: 77px;
+  left: 22px;
+}
+.line {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  top: 1.5px;
+  border-bottom: solid 3px black;
+}
+
+#menu:before {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 18px;
+  border-bottom: solid 3px green;
+  top: -10px;
+  left: 0px;
+  transition: 500ms;
+}
+#menu:hover::before{
+  width: 22px;
+  border-bottom: solid 3px #0323fb;
+  top: 7px;
+  left: 11px;
+  transform: rotate(70deg);
+}
+#menu:active::before{
+  width: 36px;
+  border-bottom: solid 3px #1d3c2d;
+  top: 3px;
+  left: 7px;
+  transform: rotate(45deg);
+}
+#menu.active:before{
+  width: 36px;
+  border-bottom: solid 3px #1d3c2d;
+  top: 3px;
+  left: 7px;
+  transform: rotate(45deg);
+}
+#menu:after {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 18px;
+  border-bottom: solid 3px red;
+  top: 8px;
+  left: 0px;
+  transition: 500ms;
+}
+#menu:hover::after{
+  width: 29px;
+  border-bottom: solid 3px #0323fb;
+  top: 8px;
+  left: 15px;
+  transform: rotate(102deg);
+}
+#menu:active::after{
+  width: 36px;
+  border-bottom: solid 3px #1d3c2d;
+  top: 16px;
+  left: 7px;
+  transform: rotate(135deg);
+}
+#menu.active:after{
+  width: 36px;
+  border-bottom: solid 3px #1d3c2d;
+  top: 16px;
+  left: 7px;
+  transform: rotate(135deg);
+}
+#menu:hover .line, #menu.active .line {
+  border-bottom: none;
+}
+
+.menuBtn {
+  cursor: pointer;
+  margin-top: 5px;
+  padding: 9px 0px 31px 0px;
+  border-radius: 13px;
+  height: 6px;
+  font-size: 18px;
+}
+.menuBtn:hover{
+  background-color: olivedrab;
+}
+.hiddenDeleteBtn{
+  visibility: hidden;
+}
+.visibleDeleteBtn{
+  visibility: visible;
+}
+
+
+#scene-place{
+  position: relative;
+  z-index: 1;
+}
+.modal{
+  margin: 0px;
+  width: 295px;
+  display: flex;
+  flex-direction: column;
+}
+.hiddenModal{
+   display: none;
+}
+
+.a-enter-vr-button {
+   z-index: 5;
+}
+label {
+  margin: auto;
+  width: 120px;
+  display: block;
+}
+.visibleModal{
+  visibility: visible;
+}
+#modalDiv{
+  height: 300px;
+  overflow: auto;
+}
+.ulModal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.liModal {
+  margin: 5px;
+  font-size: 19px;
+  text-align: center;
+  border-radius: 2px;
+  background-color: rgba(0, 176, 176, 0.2);
+  padding: 15px;
+  overflow-wrap: break-word;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.liModal:hover{
+  background-color: rgba(0, 176, 176, 0.8);
+}
+.coord{
+  width: 50px;
+  text-align: center;
 }

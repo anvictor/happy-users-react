@@ -1,0 +1,25 @@
+App.js -
+    Html2dPlace -
+        h1 -
+        burger -
+        form -
+          InputNewElemBtn
+          InputDelElemBtn
+          InputSaveScreenBtn
+          InputDelAllBtn
+          InputLoadScreenBtn
+          InputDialogPlace
+                ChoosePrimitive.js
+                    li - sphere
+                    li - cylinder
+                    li - box
+                CreateEntity.js
+                    li - type btn
+                    li - position XYZ
+                    li - rotation XYZ
+                    li - color #ffffff
+                ListForDelete.js
+                    li - sphere6465454898 delete?
+                    li - cylinder984651321 delete?
+                    li - box89546515165 delete?
+    ScenePlace -
